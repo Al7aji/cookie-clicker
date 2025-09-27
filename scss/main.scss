@@ -1,1 +1,9 @@
-@import "index";
+@use "./pages/index";
+
+@use "./pages/left_side";
+
+@use "./pages/mid_side";
+
+@use "./pages/right_side";
+
+@use "./variables/alls";

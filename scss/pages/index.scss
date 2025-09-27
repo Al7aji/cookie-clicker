@@ -1,0 +1,28 @@
+    body{
+      background-image: url('../../assets/Images/CookieBackGrond.jpg');
+        background-size: cover;
+        margin: 0;
+    .row{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100%;
+    
+    }
+    .leftleft_side{
+        margin: 0 ;
+        padding: 0;
+        display: flex;
+    }
+    .reght_side{
+        margin: 0 ;
+        padding: 0;
+        display: flex;
+    }
+    .middle_side{
+        margin: 0 ;
+        padding: 0;
+        display: flex;
+    }
+}
