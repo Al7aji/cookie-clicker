@@ -55,7 +55,6 @@ body .middle_side {
 }
 .left_section .left_content button {
   background-image: url("../../assets/Images/BigCookie.png");
-  background-color: rgb(77, 64, 20);
   background-size: cover;
   margin-top: 7rem;
   width: 300px;
@@ -84,41 +83,18 @@ body .middle_side {
   flex-direction: column;
   align-items: center;
 }
-.regth_section .upgrades {
-  margin-left: 10%;
-}
-.regth_section .title {
-  font-size: 2em;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  text-align: center;
-  color: white;
-}
-.regth_section .subtitle {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
-  text-align: center;
-  color: chartreuse;
-}
-.regth_section .click_upgrades {
-  margin-top: 2em;
-  gap: 1em;
-}
 .regth_section .click_upgrades button {
-  white-space: normal;
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
   text-align: center;
-  padding: 1em 1.3em;
-  box-sizing: border-box;
-}
-.regth_section .uniecke_upgrades button {
-  width: 100%;
-  white-space: normal;
-  text-align: center;
-  padding: 1em 2em;
-  box-sizing: border-box;
-}
-.regth_section .uniecke_upgrades {
-  margin-top: 2em;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: fit-content;
 }
 
 * {
@@ -133,4 +109,4 @@ body .middle_side {
   font-size: 1.9rem;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.cssc.map */

@@ -5,5 +5,5 @@
 
 
 # Start sass
-
-  > sass --watch main.scss:../css/main.css
+   
+  >  sass --watch main.scss:../css/main.css

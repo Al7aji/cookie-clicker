@@ -3,14 +3,57 @@
     .reght_content{
 
         display: flex ;
+        flex-direction: column;
+        align-items: center;
+        
+        
     }
-
-
-
-
-
-   
+    
+.upgrades{
+    
+    margin-left: 10%;
+    
+}
+.title{
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: white
+}
+.subtitle{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: chartreuse;
+}
+.click_upgrades {
+    margin-top: 2em;
+    gap: 1em;
 }
 
 
+.click_upgrades button{
+    
+    white-space: normal;      
+    text-align: center;       
+    padding: 1em 1.3em;        
+    box-sizing: border-box;      
+}
+
+.uniecke_upgrades button{
+    width: 100%;
+    white-space: normal;      
+    text-align: center;       
+    padding: 1em 2em;        
+    box-sizing: border-box;
+
+}
+
+.uniecke_upgrades{
+
+    margin-top: 2em;
+}
+
+}
 
