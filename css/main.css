@@ -120,7 +120,7 @@ body .right_side {
   align-items: center;
 }
 .regth_section .upgrades {
-  margin-left: 10%;
+  margin-left: 3%;
 }
 .regth_section .title {
   font-size: 2em;
@@ -141,8 +141,45 @@ body .right_side {
 }
 .regth_section .upgrade1_btn {
   background-image: url("../../assets/Images/image (1).png");
-  background-size: contain;
-  background-color: tomato;
+  background-size: 90% 90%;
+  background-color: rgb(213, 139, 230);
+}
+.regth_section .upgrade2_btn {
+  background-image: url("../../assets/Images/image (2).png");
+  background-size: 100% 100%;
+  background-color: rgb(214, 218, 133);
+}
+.regth_section .upgrade3_btn {
+  background-image: url("../../assets/Images/image (3).png");
+  background-size: 100% 100%;
+  background-color: rgb(62, 175, 206);
+}
+.regth_section .upgrade4_btn {
+  background-image: url("../../assets/Images/image (4).png");
+  background-size: 100% 100%;
+  background-color: rgb(203, 157, 111);
+}
+.regth_section .upgrade5_btn {
+  background-image: url("../../assets/Images/image (5).png");
+  background-size: 100% 100%;
+  background-color: rgb(231, 252, 188);
+}
+.regth_section .upgrade6_btn {
+  background-image: url("../../assets/Images/image (6).png");
+  background-size: 100% 100%;
+  background-color: rgb(62, 126, 95);
+}
+.regth_section .upgrade7_btn {
+  background-image: url("../../assets/Images/image (7).png");
+  background-size: 100% 100%;
+  background-color: rgb(114, 174, 216);
+}
+.regth_section .upgrade8_btn {
+  background-image: url("../../assets/Images/image (8).png");
+  background-size: cover;
+  background-color: rgb(127, 130, 83);
+}
+.regth_section .click_upgrades button {
   background-repeat: no-repeat;
   background-position: center;
   white-space: normal;
@@ -152,18 +189,35 @@ body .right_side {
   min-width: 3rem;
   min-height: 2rem;
 }
-.regth_section .click_upgrades button {
-  white-space: normal;
-  text-align: center;
-  padding: 1em 1.3em;
-  box-sizing: border-box;
-}
 .regth_section .uniecke_upgrades button {
-  width: 100%;
   white-space: normal;
-  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 1em 2em;
   box-sizing: border-box;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 3.8rem;
+}
+.regth_section .uniecke1_btn {
+  background-image: url("../../assets/Images/image (9).png");
+  background-size: cover;
+}
+.regth_section .uniecke2_btn {
+  background-image: url("../../assets/Images/image (10).png");
+  background-size: cover;
+}
+.regth_section .uniecke3_btn {
+  background-image: url("../../assets/Images/image (11).png");
+  background-size: cover;
+}
+.regth_section .uniecke4_btn {
+  background-image: url("../../assets/Images/image (12).png");
+  background-size: cover;
+}
+.regth_section .uniecke5_btn {
+  background-image: url("../../assets/Images/image (13).png");
+  background-size: cover;
 }
 .regth_section .uniecke_upgrades {
   margin-top: 2em;
