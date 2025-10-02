@@ -1,19 +1,22 @@
 .left_section{
    
     display: flex;
-
-   .left_content{
-    padding-top: 8rem;
-    display: flex;
-    height: 100vh;
-     width: 100%;
     align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+     
+   .left_content{
+    display: flex;
     
+    align-items: center;
+    gap: 10rem;
     flex-direction: column;
-
+    width: 100%;
         .cookie{
-            background-color: rgba(0, 0, 0, 0.5) ;
-        
+
+            background-color: #00000088;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.808);
+          
             display: flex;
             font-size: 1.2rem;
             font-weight: 900;
@@ -22,10 +25,8 @@
             align-items: center;
             flex-direction: column;
             
-            
             p{
-                margin: 0;
-                padding: 0;
+                
                 font-size: .875rem;
                 font-weight: 300;
             }
@@ -34,18 +35,27 @@
         
        
         button{
-            background-image: url('../../assets/Images/BigCookie.png') ;
-            background-color: rgb(77, 64, 20);
-            background-size: cover;
-            margin-top: 7rem;
-            width: 300px;
-            height: 300px;
+
+            img{
+                
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: #000000be;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.808);
+            }
+
+            width: 18rem;
+            height: 18rem;
+            margin: 0;
+            padding: 0;
             border-radius: 50%;
             cursor: pointer;   
             border: none;
             outline: none;
             transition: transform 0.1s ease-in-out; 
         }
+
         button:hover{
             transform: scale(1.1);
             
@@ -58,9 +68,4 @@
 
     
   
-}
-.leftBeam{
-    background-color: BLACK ;
-        width: 2%;
-        height: 100vh;
 }
