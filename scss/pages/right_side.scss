@@ -88,36 +88,39 @@
 
 .uniecke_upgrades button{
      white-space: normal;      
-    background-repeat: no-repeat;
-    background-position: center;      
+    background-repeat: no-repeat;    
     padding: 1em 2em;        
     box-sizing: border-box;
     overflow: hidden;
     min-width: 100%;              
     min-height: 3.8rem;
-
+    
+    
+    
+    
 }
 .uniecke1_btn{
-    background-image: url('../../assets/Images/image (9).png');
-    background-size: cover;
+    background-image: url('../../assets/Images/image (9).png'); 
+    background-color: bisque; 
 }
 .uniecke2_btn{
     background-image: url('../../assets/Images/image (10).png');
-    background-size: cover;
+    background-color: bisque; 
 }
 .uniecke3_btn{
     background-image: url('../../assets/Images/image (11).png');
-    background-size: cover;}
+    background-color: bisque; }
 .uniecke4_btn{
     background-image: url('../../assets/Images/image (12).png');   
-    background-size: cover;}
+    background-color: bisque; }
     .uniecke5_btn {
     background-image: url('../../assets/Images/image (13).png');
-    background-size: cover;
+    background-color: bisque; 
     }
 
 .uniecke_upgrades{
-
+    
+    
     margin-top: 2em;
 }
 
