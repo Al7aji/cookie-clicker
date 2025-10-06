@@ -1,7 +1,12 @@
 .regth_section{
      display: flex;
-    .reght_content{
+         height: calc(100vh);
+                    overflow-y: scroll;
+                    border-top: 2px solid rgba(0, 0, 0, 0.808);
+                    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.808);
 
+    .reght_content{
+        
         display: flex ;
         flex-direction: column;
         align-items: center;

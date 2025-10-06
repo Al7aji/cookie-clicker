@@ -49,6 +49,7 @@ body .right_side {
   font-weight: 300;
 }
 .left_section .left_content button {
+  background: none;
   width: 18rem;
   height: 18rem;
   margin: 0;
@@ -63,8 +64,6 @@ body .right_side {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.7450980392);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.808);
 }
 .left_section .left_content button:hover {
   transform: scale(1.1);
@@ -113,6 +112,10 @@ body .right_side {
 
 .regth_section {
   display: flex;
+  height: 100vh;
+  overflow-y: scroll;
+  border-top: 2px solid rgba(0, 0, 0, 0.808);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.808);
 }
 .regth_section .reght_content {
   display: flex;
