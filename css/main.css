@@ -50,6 +50,13 @@ body .right_side {
 }
 .left_section .left_content button {
   background: none;
+}
+.left_section .left_content button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.left_section .left_content button {
   width: 18rem;
   height: 18rem;
   margin: 0;
@@ -59,11 +66,6 @@ body .right_side {
   border: none;
   outline: none;
   transition: transform 0.1s ease-in-out;
-}
-.left_section .left_content button img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
 }
 .left_section .left_content button:hover {
   transform: scale(1.1);
@@ -142,15 +144,10 @@ body .right_side {
   margin-top: 2em;
   gap: 1em;
 }
-.regth_section .upgrade1_btn {
+.regth_section .click_upgrades .upgrade1_btn {
   background-image: url("../../assets/Images/image (1).png");
   background-size: 90% 90%;
   background-color: rgb(213, 139, 230);
-}
-.regth_section .upgrade2_btn {
-  background-image: url("../../assets/Images/image (2).png");
-  background-size: 100% 100%;
-  background-color: rgb(214, 218, 133);
 }
 .regth_section .upgrade3_btn {
   background-image: url("../../assets/Images/image (3).png");
