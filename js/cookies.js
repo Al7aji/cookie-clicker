@@ -3,13 +3,14 @@
 function initRightSide() {
       
       class Click_Upgrades{
-        constructor( name, buttonId, Price,efficienty ) {
+        constructor( name, buttonId, Price,efficienty,autoclicke  ) {
             this.name = name;
             this.button = document.getElementById(buttonId);
             this.Price = Price;
             this.price = Price;
             this.efficienty = efficienty;
-             this.counts = 0;
+            this.autoclicke = autoclicke;
+            this.counts = 0;
             this.button.addEventListener('click', () =>{
                 this.buy() 
              
@@ -21,26 +22,15 @@ function initRightSide() {
                 game.totalCookies -= this.price;
                 this.counts++;
 
-                if(this.button.id === "upgrade8"){
-                   game.Autoclicker[0].cpsGain *= game.Click_Upgrades[0].efficienty
-                }else if(this.button.id === "upgrade1" ){
-                         game.Autoclicker[1].cpsGain *= game.Click_Upgrades[1].efficienty  
-                }else if(this.button.id === "upgrade3" ){
-                         game.Autoclicker[2].cpsGain *= game.Click_Upgrades[2].efficienty  
-                }
-                
-                
-                
-                game.cookiesPerSecond = 0;
-                    game.Autoclicker.forEach(auto => {
-                        game.cookiesPerSecond += auto.cpsGain * auto.count;
-                    });
-                
-                
                
-
-
-                    game.updateUi();
+                   this.autoclicke.cpsGain *= this.efficienty;
+   
+                game.cookiesPerSecond = 0;
+                game.Autoclicker.forEach(auto => {
+                    game.cookiesPerSecond += auto.cpsGain * auto.count;
+                });
+                
+                game.updateUi();
 
              }else { 
                 alert("Not enough cookies! 🍪")
@@ -106,8 +96,9 @@ function initRightSide() {
             ];
 
             this.Click_Upgrades = [
-                new Click_Upgrades("GrandmaUp", "upgrade8", 50, 2),
-                new Click_Upgrades("FarmUp", "upgrade2", 150, 2)
+
+                new Click_Upgrades("GrandmaUp", "upgrade8", 50, 2, this.Autoclicker[0]),
+                new Click_Upgrades("FarmUp", "upgrade2", 150, 2,this.Autoclicker[1])
 
             ];
 
