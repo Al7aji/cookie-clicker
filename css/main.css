@@ -50,13 +50,6 @@ body .right_side {
 }
 .left_section .left_content button {
   background: none;
-}
-.left_section .left_content button img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-.left_section .left_content button {
   width: 18rem;
   height: 18rem;
   margin: 0;
@@ -67,8 +60,25 @@ body .right_side {
   outline: none;
   transition: transform 0.1s ease-in-out;
 }
+.left_section .left_content button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
 .left_section .left_content button:hover {
   transform: scale(1.1);
+}
+.left_section .event_message {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: gold;
+  background-color: rgba(245, 245, 220, 0.774);
+  border: 0.3rem solid gold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .mid_section .mid_content {
@@ -241,6 +251,22 @@ body .right_side {
   color: white;
   font-weight: 600;
   font-size: 1.9rem;
+}
+
+.golden-cookie {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  background: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 20px gold;
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 999;
+}
+
+.golden-cookie:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=main.css.map */

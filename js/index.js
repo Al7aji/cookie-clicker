@@ -13,7 +13,7 @@ window.onload = function() {
     loadPage('pages/left_side.html', 'container1', () => {
         loadPage('pages/mid_side.html', 'container2');
         loadPage('pages/right_side.html', 'container3', () => {
-            if (typeof initRightSide === "function") initRightSide();
+        if (typeof initRightSide === "function") initRightSide();
         });
     });
 };

@@ -8,3 +8,18 @@
     font-weight: 600;
     font-size: 1.9rem;
 }
+.golden-cookie {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  background: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 20px gold;
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 999;
+ 
+}
+.golden-cookie:hover {
+  transform: scale(1.2);
+}
