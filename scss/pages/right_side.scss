@@ -75,7 +75,18 @@
     background-size: cover; 
     background-color: rgb(127, 130, 83);
 }
+.bigCookie-skin1{
+ background-image: url('/assets/Images/BigCooki2.webp');
+ background-size: cover; 
+    background-color: rgb(127, 130, 83);
 
+}
+.bigCookie-skin2{
+ background-image: url('/assets/Images/BigCookie.png');
+ background-size: cover; 
+
+
+}
 
 .click_upgrades button{
         
@@ -97,11 +108,9 @@
     overflow: hidden;
     min-width: 100%;              
     min-height: 3.8rem;
-    
-    
-    
-    
+
 }
+
 .uniecke1_btn{
     background-image: url('../../assets/Images/image (9).png'); 
     background-color: bisque; 

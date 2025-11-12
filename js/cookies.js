@@ -1,3 +1,5 @@
+const { console } = require("inspector");
+
 
 function initRightSide() {
       const clickerSound = [
@@ -64,8 +66,11 @@ function initRightSide() {
             this.count = 0;
        
             this.button.innerText = `${this.name}\nPrice: ${this.price} 🍪\nOwned: ${this.count}`;
-             
+
             this.button.addEventListener('click', () => this.buy());    
+
+
+            
         }
 
         buy() {
@@ -79,29 +84,52 @@ function initRightSide() {
                 game.updateUi();
                 this.updateButton();
                 Game.saveGame();
+                
             } else {
                 
                 alert("Not enough cookies! 🍪");
             }
         }
 
+  
+
         updateButton() {
             this.button.innerText = `${this.name}\nPrice: ${this.price} 🍪\nOwned: ${this.count}`;
         }
     }
 
+    class Themas{
+        constructor( buttonId,autoclicke) {
+            this.button = document.getElementById(buttonId);
+            this.autoclicke = autoclicke;
+            this.button.style.display = "none";                           
+    }
 
+      
+        update(){
+            if (this.autoclicke.count >= 1) {
+                this.button.style.display = "block";
+            } else {
+                this.button.style.display = "none";
+            }
+        } 
+             
+    }
 
 
     class Game {
         constructor() {
-            this.totalCookies = 100 ; 
+            this.totalCookies = 10000; 
             this.cookiesPerSecond = 0;
+            this.perclick = 1;
             this.bigCookie = document.getElementById("bigCookie");
             this.cookieDisplay = document.getElementById("cookie");
             this.cpsDisplay = document.getElementById("cookiesPerSecond");
-            this.perclick = 1;
-            
+            this.saveButton = document.getElementById("saveButton");
+            this.loadButton = document.getElementById("loadButton");
+            this.skinEen = document.getElementById("skin1");
+            this.skinTwee = document.getElementById("skin2");
+            this.skinchoice();
             this.Autoclicker = [
                 new Autoclicker("Grandma", "uniecke1", 99, 4),
                 new Autoclicker("Farm", "uniecke2", 500, 10),
@@ -117,6 +145,16 @@ function initRightSide() {
                 
                  
             ];
+
+            this.Themas = [
+                new Themas("row1", this.Autoclicker[0]),
+                new Themas("row2", this.Autoclicker[1]),
+                new Themas("row3", this.Autoclicker[2]),
+                new Themas("row4", this.Autoclicker[3]),
+                new Themas("row5", this.Autoclicker[4]),
+
+            ];
+
 
             this.bigCookie.addEventListener('click', () => {
                 this.totalCookies += this.perclick  ; 
@@ -135,12 +173,48 @@ function initRightSide() {
             });
 
 
-            
             setInterval(() => this.produceCookies(), 1000);
             this.updateUi();
             this.loadGame();
             setInterval(() => this.save(), 10000);
+
+            this.saveButton.addEventListener('click', () =>{ this.saveGame();
+              if(this.saveGame){
+                 alert("Game Saved!")
+                 
+                 }else{
+                  alert("Game not saved.")  
+                 }
+                }
+            );
+            this.loadButton.addEventListener('click', () =>{ this.loadGame();
+              if(this.loadGame) {
+                alert("Game Loaded!")
+              }else{
+                alert("No saved game found.")
+              }
+                }
+              
+            );
+        };
+
+        skinchoice(){ 
+            this.img = this.bigCookie.querySelector('img');
+            const skins = {
+                een: "./assets/Images/BigCooki2.webp",
+                twee: "./assets/Images/BigCookie.png"
+            };
+
+            this.skinEen?.addEventListener('click', () => {
+                this.img.src = skins.een;
+            });
+
+            this.skinTwee?.addEventListener('click', () => {
+                this.img.src = skins.twee;
+            });
+        
         }
+
         
         produceCookies() {
             this.totalCookies += this.cookiesPerSecond;
@@ -161,6 +235,7 @@ function initRightSide() {
             if (this.cpsDisplay) {
                 this.cpsDisplay.innerText = `PerSecond: ${this.cookiesPerSecond}`;
             }
+            this.Themas.forEach((t) => t.update());
         }
 
         saveGame() {

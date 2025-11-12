@@ -1,3 +1,4 @@
+// Function to load HTML content into a specified container
 function loadPage(url, containerId, callback) {
     fetch(url)
       .then(response => response.text())
@@ -7,7 +8,7 @@ function loadPage(url, containerId, callback) {
       })
       .catch(error => console.error(`${url}:`, error));
 }
-
+// Initialize the page by loading the three sections
 window.onload = function() {
     loadPage('pages/left_side.html', 'container1', () => {
         loadPage('pages/mid_side.html', 'container2');

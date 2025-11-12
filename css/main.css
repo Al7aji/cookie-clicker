@@ -179,6 +179,15 @@ body .right_side {
   background-size: cover;
   background-color: rgb(127, 130, 83);
 }
+.regth_section .bigCookie-skin1 {
+  background-image: url("/assets/Images/BigCooki2.webp");
+  background-size: cover;
+  background-color: rgb(127, 130, 83);
+}
+.regth_section .bigCookie-skin2 {
+  background-image: url("/assets/Images/BigCookie.png");
+  background-size: cover;
+}
 .regth_section .click_upgrades button {
   background-repeat: no-repeat;
   background-position: center;
