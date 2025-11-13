@@ -74,9 +74,10 @@ body .right_side {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: gold;
+  color: rgb(165, 143, 16);
   background-color: rgba(245, 245, 220, 0.774);
-  border: 0.3rem solid gold;
+  border: 0.3rem solid rgb(165, 143, 16);
+  padding: 0.4em;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -159,35 +160,45 @@ body .right_side {
   background-size: 90% 90%;
   background-color: rgb(213, 139, 230);
 }
-.regth_section .upgrade3_btn {
+.regth_section .upgrade1_btn {
   background-image: url("../../assets/Images/image (3).png");
   background-size: 100% 100%;
   background-color: rgb(62, 175, 206);
 }
-.regth_section .upgrade4_btn {
+.regth_section .upgrade2_btn {
   background-image: url("../../assets/Images/image (4).png");
   background-size: 100% 100%;
   background-color: rgb(203, 157, 111);
 }
-.regth_section .upgrade5_btn {
+.regth_section .upgrade3_btn {
   background-image: url("../../assets/Images/image (5).png");
   background-size: 100% 100%;
   background-color: rgb(231, 252, 188);
 }
-.regth_section .upgrade6_btn {
+.regth_section .upgrade4_btn {
   background-image: url("../../assets/Images/image (6).png");
   background-size: 100% 100%;
   background-color: rgb(62, 126, 95);
 }
-.regth_section .upgrade7_btn {
+.regth_section .upgrade5_btn {
   background-image: url("../../assets/Images/image (7).png");
   background-size: 100% 100%;
   background-color: rgb(114, 174, 216);
 }
-.regth_section .upgrade8_btn {
+.regth_section .upgrade6_btn {
   background-image: url("../../assets/Images/image (8).png");
   background-size: cover;
   background-color: rgb(127, 130, 83);
+}
+.regth_section .upgrade7_btn {
+  background-image: url("../../assets/Images/fork.png");
+  background-size: cover;
+  background-color: rgb(187, 184, 115);
+}
+.regth_section .upgrade8_btn {
+  background-image: url("../../assets/Images/mine_tools.png");
+  background-size: cover;
+  background-color: rgb(171, 170, 139);
 }
 .regth_section .bigCookie-skin1 {
   background-image: url("/assets/Images/BigCooki2.webp");
